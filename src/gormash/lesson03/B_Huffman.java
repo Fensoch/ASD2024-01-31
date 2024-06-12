@@ -1,4 +1,4 @@
-package by.it.a_khmelev.lesson03;
+package gormash.lesson03;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -52,6 +52,8 @@ public class B_Huffman {
         Integer length = scanner.nextInt();
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! НАЧАЛО ЗАДАЧИ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
         //тут запишите ваше решение
+
+
         Map<String, Character> codes = new HashMap<>();
         for (int i = 0; i < count; i++) {
             String letter = scanner.next().substring(0, 1); // буква
@@ -70,8 +72,6 @@ public class B_Huffman {
                 codeBuilder.setLength(0); // Очистить буфер
             }
         }
-
-
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! КОНЕЦ ЗАДАЧИ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
         return result.toString(); //01001100100111

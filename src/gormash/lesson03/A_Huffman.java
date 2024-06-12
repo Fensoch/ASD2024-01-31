@@ -1,8 +1,11 @@
-package by.it.a_khmelev.lesson03;
+package gormash.lesson03;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
 
 //Lesson 3. A_Huffman.
 //Разработайте метод encode(File file) для кодирования строки (код Хаффмана)
@@ -85,6 +88,7 @@ public class A_Huffman {
             right.fillCodes(code + "1");
         }
 
+
     }
 
     ////////////////////////////////////////////////////////////////////////////////////
@@ -104,6 +108,7 @@ public class A_Huffman {
             //и можно запомнить его в индексе для поиска кода по символу.
             codes.put(this.symbol, code);
         }
+
     }
 
     //индекс данных из листьев
@@ -163,8 +168,7 @@ public class A_Huffman {
     //!!!!!!!!!!!!!!!!!!!!!!!!!     КОНЕЦ ЗАДАЧИ     !!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-    public static void main(String[] args) throws FileNotFoundException
-    {
+    public static void main(String[] args) throws FileNotFoundException {
         String root = System.getProperty("user.dir") + "/src/";
         File f = new File(root + "by/it/a_khmelev/lesson03/dataHuffman.txt");
         A_Huffman instance = new A_Huffman();
